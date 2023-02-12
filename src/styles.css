@@ -1,0 +1,91 @@
+.whole_wrapper {
+	background: rgba(0, 0, 0, .1);
+	width: 100%;
+	min-height: 100%;
+	padding: 5%;
+}
+
+.whole_wrapper .each_card {
+	width: 50%;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	padding: 10px;
+	background: white;
+	margin: 5% 25%;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.whole_wrapper .each_card .image_container {
+	text-align: left;
+	width: 100%;
+}
+
+.whole_wrapper .each_card .image_container img {
+	width: 100%;
+	border-radius: 10px;
+	height: 300px;
+}
+
+.whole_wrapper .each_card .right_contents_container {
+	display: flex;
+	flex-direction: column;
+}
+
+.whole_wrapper .each_card .right_contents_container .name_field {
+	font-size: 22px;
+	font-weight: 900;
+	line-height: 30px;
+}
+
+.whole_wrapper .each_card .right_contents_container .email_field {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+.hidden_container {
+	display: none;
+}
+
+.pet_details {
+	position: fixed;
+	z-index: 9999;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	width: fit-content;
+	height: fit-content;
+	overflow: auto;
+	background-color: rgb(7, 54, 102);
+	color: white;
+	left: 38%;
+	top: 28%;
+	align-items: center;
+	padding: 38px;
+	font-size: 21px;
+	flex-direction: column;
+	box-shadow: 5px 5px #bfc2c7;
+}
+
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	align-self: end !important;
+}
+
+.button_wrapper {
+	padding-top: 20px;
+}
+
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 30px;
+}
